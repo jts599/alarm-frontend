@@ -7,7 +7,7 @@
     color: var(--text-primary);
     min-width: 320px;
     min-height: 220px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: var(--font-family-primary);
 }
 
 .control-container {
@@ -51,13 +51,13 @@
 }
 
 .light-on-button .button-icon {
-    font-size: 32px;
+    font-size: 40px;
     line-height: 1;
     opacity: 0.9;
 }
 
 .light-on-button .button-label {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -106,20 +106,20 @@
 }
 
 .settings-button .button-icon {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1;
     opacity: 0.9;
 }
 
 .settings-button .button-label {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .duration-button .button-text {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 300;
     letter-spacing: 0.5px;
 }
@@ -138,23 +138,23 @@
     }
     
     .light-on-button .button-icon {
-        font-size: 24px;
+        font-size: 30px;
     }
     
     .light-on-button .button-label {
-        font-size: 12px;
+        font-size: 15px;
     }
     
     .settings-button .button-icon {
-        font-size: 16px;
+        font-size: 20px;
     }
     
     .settings-button .button-label {
-        font-size: 10px;
+        font-size: 13px;
     }
     
     .duration-button .button-text {
-        font-size: 16px;
+        font-size: 20px;
     }
     
     .right-buttons {

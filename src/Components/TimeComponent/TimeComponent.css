@@ -5,7 +5,7 @@
     border-radius: var(--radius-xl);
     padding: var(--spacing-2xl) var(--spacing-5xl);
     color: var(--text-primary);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: var(--font-family-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,24 +38,24 @@
 /* Responsive design */
 @media (max-width: 768px) {
     .time-digits {
-        font-size: 56px;
+        font-size: 70px;
         letter-spacing: -1px;
     }
     
     .time-period {
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 6px;
     }
 }
 
 @media (max-width: 480px) {
     .time-digits {
-        font-size: 48px;
+        font-size: 60px;
         letter-spacing: -1px;
     }
     
     .time-period {
-        font-size: 18px;
+        font-size: 23px;
         margin-bottom: 4px;
     }
 }
