@@ -1,0 +1,179 @@
+.light-control-component {
+    background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 280px;
+    min-height: 200px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.control-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    gap: 12px;
+    height: 160px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.light-on-button {
+    flex: 1;
+    background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: inherit;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.light-on-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.light-on-button:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.light-on-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.light-on-button .button-icon {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.light-on-button .button-label {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.right-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 0 0 120px;
+}
+
+.settings-button,
+.duration-button {
+    background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.settings-button {
+    flex: 1;
+}
+
+.duration-button {
+    flex: 1;
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+}
+
+.settings-button:hover,
+.duration-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.settings-button:active,
+.duration-button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.settings-button .button-icon {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.settings-button .button-label {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.duration-button .button-text {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .light-control-component {
+        min-width: 240px;
+        min-height: 160px;
+        padding: 16px;
+    }
+    
+    .control-container {
+        height: 120px;
+        padding: 12px;
+    }
+    
+    .light-on-button .button-icon {
+        font-size: 24px;
+    }
+    
+    .light-on-button .button-label {
+        font-size: 12px;
+    }
+    
+    .settings-button .button-icon {
+        font-size: 16px;
+    }
+    
+    .settings-button .button-label {
+        font-size: 10px;
+    }
+    
+    .duration-button .button-text {
+        font-size: 16px;
+    }
+    
+    .right-buttons {
+        flex: 0 0 100px;
+    }
+}
+
+/* Loading state animation */
+.light-on-button:disabled .button-icon {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}

@@ -7,14 +7,14 @@ export interface IWeatherClient {
     getTwelveHourForecast(): Promise<IForecast>
 }
 
-interface IForecast {
+export interface IForecast {
     highTemp: number
     lowTemp: number
     precipitationChance: number
     weatherCondition: WeatherCondition
 }
 
-enum WeatherCondition {
+export enum WeatherCondition {
     Sunny = 'Sunny',
     Cloudy = 'Cloudy',
     Rainy = 'Rainy',
