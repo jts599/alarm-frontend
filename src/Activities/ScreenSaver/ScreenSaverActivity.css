@@ -1,13 +1,15 @@
+@import '../../shared.css';
+
 .screensaver-activity {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
-  background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
-  color: white;
+  background: var(--bg-screensaver);
+  color: var(--text-primary);
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
 }
 
 .screensaver-content {
@@ -15,17 +17,20 @@
 }
 
 .screensaver-content p:first-child {
-  font-size: 32px;
-  font-weight: 300;
-  margin: 0 0 16px 0;
-  opacity: 0.9;
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-ultra-light);
+  margin: 0 0 var(--spacing-lg) 0;
+  opacity: var(--opacity-high);
+  color: var(--text-primary);
 }
 
 .screensaver-hint {
-  font-size: 16px;
-  opacity: 0.6;
+  font-size: var(--font-size-md);
+  opacity: var(--opacity-low);
   margin: 0;
   font-style: italic;
+  font-weight: var(--font-weight-light);
+  color: var(--text-secondary);
 }
 
 /* Responsive design */

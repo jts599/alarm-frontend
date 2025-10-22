@@ -42,7 +42,6 @@ export const LightControlComponent: React.FC<IActivityProps> = ({ activeActivity
                     disabled={isLoading}
                 >
                     <div className="button-icon">💡</div>
-                    <div className="button-label">Turn On</div>
                 </button>
 
                 <div className="right-buttons">
@@ -51,7 +50,6 @@ export const LightControlComponent: React.FC<IActivityProps> = ({ activeActivity
                         onClick={handleSettings}
                     >
                         <div className="button-icon">⚙️</div>
-                        <div className="button-label">Settings</div>
                     </button>
 
                     <button 

@@ -72,9 +72,6 @@ export const WeatherComponent: React.FC = () => {
 
     return (
         <div className="weather-component">
-            <div className="weather-header">
-                <h3>12-Hour Forecast</h3>
-            </div>
             
             <div className="weather-content">
                 <div className="weather-icon">

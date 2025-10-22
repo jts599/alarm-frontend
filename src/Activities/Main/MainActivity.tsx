@@ -10,23 +10,21 @@ import './MainActivity.css'
 export const MainActivity: React.FC<IActivityProps> = ({ activeActivitySetter }) => {
   return (
     <div className="main-activity">
-      <h1>Alarm Frontend</h1>
-      
-      {/* Main time display - prominent position */}
+      {/* Main time display - center of screen */}
       <div className="time-section">
         <TimeComponent />
       </div>
       
-      {/* Component grid */}
+      {/* Component grid - positioned in corners */}
       <div className="components-grid">
-        <div>
-          <NextEventComponent />
+        <div className="light-status-container">
+          <LightStatusComponent />
         </div>
-        <div>
+        <div className="weather-container">
           <WeatherComponent />
         </div>
-        <div>
-          <LightStatusComponent />
+        <div className="next-event-container">
+          <NextEventComponent />
         </div>
         <div className="light-control-container">
           <LightControlComponent activeActivitySetter={activeActivitySetter} />

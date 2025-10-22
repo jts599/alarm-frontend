@@ -80,19 +80,11 @@ export const NextEventComponent: React.FC = () => {
 
     return (
         <div className={`next-event-component ${eventInfo.isAlarmActive ? 'active' : 'inactive'}`}>
-            <div className="next-event-header">
-                <h3>Next Event</h3>
-            </div>
-            
             <div className="next-event-content">
                 <div className="event-icon">
                     {getEventIcon(eventInfo.nextEventType)}
                 </div>
-                
-                <div className="event-details">
-                    <div className="event-type">
-                        {getEventLabel(eventInfo.nextEventType)}
-                    </div>
+                <div>
                     
                     <div className="event-time">
                         {eventInfo.nextEventTime}

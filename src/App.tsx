@@ -40,17 +40,15 @@ export default function App() {
             justifyContent: 'center',
             alignItems: 'center',
             minHeight: '100vh',
-            backgroundColor: '#f0f0f0',
+            backgroundColor: '#1a1a1a',
             padding: '20px',
             boxSizing: 'border-box'
         }}>
             <div style={{
                 width: '1280px',
                 height: '720px',
-                backgroundColor: 'white',
-                borderRadius: '8px',
-                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
-                padding: '32px',
+                backgroundColor: '#2d2d2d',
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
                 boxSizing: 'border-box',
                 display: 'flex',
                 flexDirection: 'column'
