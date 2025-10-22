@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { GetAlarmClient, IAlarmClient } from '../../Clients/AlarmClients'
+import { Activities, IActivityProps } from '../../App'
 import './LightControlComponent.css'
 
-export const LightControlComponent: React.FC = () => {
+export const LightControlComponent: React.FC<IActivityProps> = ({ activeActivitySetter }) => {
     const [isLoading, setIsLoading] = useState<boolean>(false)
     const [duration, setDuration] = useState<number>(5) // Default 5 minutes
 
@@ -21,8 +22,7 @@ export const LightControlComponent: React.FC = () => {
     }
 
     const handleSettings = () => {
-        // TODO: Implement settings navigation
-        console.log('Settings clicked')
+        activeActivitySetter(Activities.settings)
     }
 
     const handleDurationAdjust = () => {

@@ -1,0 +1,41 @@
+.screensaver-activity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.screensaver-content {
+  text-align: center;
+}
+
+.screensaver-content p:first-child {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0 0 16px 0;
+  opacity: 0.9;
+}
+
+.screensaver-hint {
+  font-size: 16px;
+  opacity: 0.6;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .screensaver-content p:first-child {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  
+  .screensaver-hint {
+    font-size: 14px;
+  }
+}
