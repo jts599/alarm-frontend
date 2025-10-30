@@ -27,5 +27,3 @@ Preview production build:
 ```bash
 npm run preview
 ```
-# alarm-frontend
-Alarm_Frontend

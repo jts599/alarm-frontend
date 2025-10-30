@@ -16,7 +16,7 @@ export interface IUserSettings {
     enabledDaysOfWeek: string[]
 }
 
-class StubSettingsClient implements ISettingsClient {
+export class StubSettingsClient implements ISettingsClient {
     private settings: IUserSettings = {
         AlarmTimeInMinutesSinceMidnight: 420, // 7:00 AM
         transitionMinutes: 30,

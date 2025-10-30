@@ -2,6 +2,8 @@ export function GetAlarmClient(): IAlarmClient {
     return new StubAlarmClient()
 }
 
+
+/// all classes inheriting from this should be static classes
 export interface IAlarmClient {
     getNumberOfActiveBulbs(): Promise<number>
     getNextAlarmEventInfo(): Promise<IAlarmEventInfo>
@@ -22,7 +24,7 @@ export enum EventType {
     Sunrise = 1
 }
 
-class StubAlarmClient implements IAlarmClient {
+export class StubAlarmClient implements IAlarmClient {
     async getNumberOfActiveBulbs(): Promise<number> {
         return 3
     }
